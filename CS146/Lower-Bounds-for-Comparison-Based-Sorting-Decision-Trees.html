@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lower Bounds for Comparison Based Sorting: Decision Trees</title>
+	</head>
+	<body>
+		<h1><b><u>Lower Bounds for Comparison Based Sorting: Decision Trees</u></b></h1>
+		<div>
+			<ol>
+				<li>Prerequisites</li>
+				<li>Sorting: <i>O</i>(n<sup>2</sup>) &rarr; <i>O</i>(<i>n</i>log<i>n</i>) &rarr; ???
+				<li>Comparison Based Algorithms: Insertion Sort</li>
+				<li>Other Decision Trees</li>
+				<li>Bound for 3 items</li>
+				<li>Bound for <i>n</i>
+			</ol>
+		</div>
+		<h3><u>Sorting</u></h3>
+		<div>
+			<ul>
+				<li>Insertion Sort: sort in <i>O</i>(<i>n</i><sup>2</sup>) time</li>
+				<li>Merge Sort: sort in <i>O</i>(<i>n</i>log<i>n</i>) time</li>
+			</ul>
+			<p>If we can sort in <i>O</i>(<i>n</i>log<i>n</i>), then <i>O</i>(<i>n<sup>2</sup></i>) doesn't look so good anymore.</p>
+		</div>
+		<p><i>InsertionSort</i>(array A){
+		<br>&nbsp; for(i=1 to A.length-1){
+		<br>&nbsp; &nbsp; temp = A[i];
+		<br>&nbsp; &nbsp; j = i;
+		<br>&nbsp; &nbsp; while(i > 0 && temp < A[j-1]){
+		<br>&nbsp; &nbsp; &nbsp; A[j] = A[j - 1];
+		<br>&nbsp; &nbsp; &nbsp; j--;
+		<br>&nbsp; &nbsp; }
+		<br>&nbsp; &nbsp; A[j] = temp;
+		<br>&nbsp; }
+		<br>}
+		</p>
+		
+		<p><i>InsertionSortFor3Items</i>(array A[0..2){
+                <br>&nbsp; for(i=1 to 2){
+                <br>&nbsp; &nbsp; temp = A[i];
+                <br>&nbsp; &nbsp; j = i;
+                <br>&nbsp; &nbsp; while(i > 0 && temp < A[j-1]){
+                <br>&nbsp; &nbsp; &nbsp; A[j] = A[j - 1];
+                <br>&nbsp; &nbsp; &nbsp; j--;
+                <br>&nbsp; &nbsp; }
+                <br>&nbsp; &nbsp; A[j] = temp;
+                <br>&nbsp; }
+                <br>}
+	</body>
+</html>
