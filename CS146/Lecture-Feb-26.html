@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+	.tree ul{
+		padding-top: 20px;
+		position: relative;
+	}
+	
+	.tree li{
+		float: left;
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 5px 0 5px;
+	}
+
+	.tree li::before, .tree li::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 50%;
+		border-top: 1px solid #ccc;
+		width: 50%;
+		height: 20px;
+	}
+	
+	.tree li::after{
+		right: auto;
+		left: 50%;
+		border-left: 1px solid #ccc;
+	}
+
+	.tree li:only-child::after, .tree li:only-child::before{
+		display: none;
+	}
+
+	.tree li:only-child{
+		padding-top: 0;
+	}
+
+	.tree li:first-child::before, .tree li:last-child::after{
+		border: 0 none;
+	}
+	
+	.tree li:last-child::before{
+		border-right: 1px solid #ccc;
+		border-radius: 0 5px 0 0;
+	}
+
+	.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	.tree ul ul::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		border-left: 1px solid #ccc;
+		width: 0;
+		height: 20px;
+	}
+	
+	.tree li div{
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-family: arial, verdana, tahoma;
+		font-size: 11px;
+		display: inline-block;
+		border-radius: 5px;
+	}
+</style>
+<head>
+	<title>Lecture notes February 26</title>
+</head>
+<body>
+	<canvas id="MyCanvas", width="500", height="500"></canvas>
+	<script>
+		const canvas = document.getElementById("MyCanvas");
+		const ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+		ctx.beginPath();
+		ctx.moveTo(50,490);
+		ctx.lineTo(100,490);
+		ctx.lineTo(100,200);
+		ctx.lineTo(200,200);
+		ctx.lineTo(200,275);
+		ctx.lineTo(225,275);
+		ctx.lineTo(225,150);
+		ctx.lineTo(300,150);
+		ctx.lineTo(300,490);
+		ctx.lineTo(350,490);
+		ctx.lineTo(400,490);
+		ctx.lineTo(400,250);
+		ctx.lineTo(450,250);
+		ctx.lineTo(450,350);
+		ctx.lineTo(490,350);
+		ctx.lineTo(490,490);
+		ctx.lineTo(500,490);
+		ctx.stroke();
+	</script>
+	<p>
+		<ol>
+			<li>find max &Theta;(n)</li>
+			<li>For each value - make a building</li>
+		</ol>
+		<br>
+		List: 2,9,16,4,3.3,7.8
+		<br>
+</body>
+</html>

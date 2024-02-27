@@ -60,6 +60,53 @@ table, th, td {
 	</ol>
 	</div>
 	
+<h1><b><u>Chapter 3 Section 1 Textbook Notes:</u></b></h1>
+	<h2><u>Random Variable (rv)</u></h2>
+	<p><u>Definition:</u> any rule that associates a number with each outcome in area S.</p>
+		
+	<canvas id="MyCanvas", width="400", height="250"></canvas>
+	<script>
+		const canvas = document.getElementById("MyCanvas");
+		const ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+			
+		ctx.beginPath();
+		ctx.moveTo(1,101);
+		ctx.lineTo(1,1);
+		ctx.lineTo(201,1);
+		ctx.lineTo(201,101);
+		ctx.lineTo(1,101);
+		
+		ctx.moveTo(220,50);
+		ctx.lineTo(390,50);
+		
+		ctx.moveTo(234,60);
+		ctx.lineTo(234,40);
+
+		ctx.moveTo(268,60)
+		ctx.lineTo(268,40);
+		
+		ctx.moveTo(302,60);
+		ctx.lineTo(302,40);
+
+		ctx.moveTo(336,60);
+		ctx.lineTo(336,40);
+
+		ctx.moveTo(370,60);
+		ctx.lineTo(370,40);
+		
+		ctx.fillStyle = "blue";
+		ctx.moveTo(20,50);
+		ctx.bezierCurveTo(170,60,230,2,234,40);
+		
+		ctx.moveTo(100,70);
+		ctx.bezierCurveTo(170,60,230,3,234,40);
+		
+		ctx.moveTo(150,20);
+		ctx.bezierCurveTo(170,40,300,2,302,40);
+		ctx.stroke();
+	</script>
 	
+		
 </body>
 </html>
