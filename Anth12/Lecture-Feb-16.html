@@ -3,6 +3,78 @@
 <head>
 	<title>Lecture Notes: Feb 26</title>
 </head>
+<style>
+	.tree ul{
+		padding-top: 20px;
+		position: relative;
+	}
+	
+	.tree li{
+		float: left;
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 5px 0 5px;
+	}
+
+	.tree li::before, .tree li::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 50%;
+		border-top: 1px solid #ccc;
+		width: 50%;
+		height: 20px;
+	}
+	
+	.tree li::after{
+		right: auto;
+		left: 50%;
+		border-left: 1px solid #ccc;
+	}
+
+	.tree li:only-child::after, .tree li:only-child::before{
+		display: none;
+	}
+
+	.tree li:only-child{
+		padding-top: 0;
+	}
+
+	.tree li:first-child::before, .tree li:last-child::after{
+		border: 0 none;
+	}
+	
+	.tree li:last-child::before{
+		border-right: 1px solid #ccc;
+		border-radius: 0 5px 0 0;
+	}
+
+	.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	.tree ul ul::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		border-left: 1px solid #ccc;
+		width: 0;
+		height: 20px;
+	}
+	
+	.tree li div{
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-family: arial, verdana, tahoma;
+		font-size: 11px;
+		display: inline-block;
+		border-radius: 5px;
+	}
+	</style>
 <body>
 	<h1>Lecture Notes: February 26th, 2024</h1>
 	<h2><u>Mutation in DNA</u></h2>
@@ -111,8 +183,75 @@
 					<li><b>Genetic Drift:</b> random changes in gene frequency in a population (only genotypes of subpopulation)
 						<ul>
 							<li>Extreme weather: hurricane wipes out a gene pool</li>
-							<li>Founder effect: limited allele frequency (population is on an island)</li>
+							<li>Founder effect: limited allele frequency (population is on an island)
+								<ul>
+									<li>Ellis-van Creveld Syndrome (EVC) (Amish)</li>
+								</ul>
+							</li>
 							<li>Genetic Bottleneck: elephant seal, limited gene pool</li>
+						</ul>
+					</li>
+					<li><b>Natural Selection</b>
+						<ul>
+							<li>operates of variation</li>
+						</ul>
+					</li>
+					<li><b>Mutations</b>
+						<ul>
+							<li>generates new genetic material</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="tree">
+		<ul>
+			<li><u><b>Evolution</b></u>
+				<ul>
+					<li><u>Natural Selection</u>
+						<ul>
+							<li>Direction Selection</li>
+							<li>Stabilizing Selection</li>
+						</ul>
+					</li>
+					<li><u>Gene Flow</u>
+						<ul>
+							<li>Migration</li>
+						</ul>
+					</li>
+					<li><u>Genetic Drift</u>
+						<ul>
+							<li>Extreme Weather</li>
+							<li>Founder Effect</li>
+							<li>Genetic Bottleneck</li>
+						</ul>
+					</li>
+					<li><u>Sexual Selection</u>
+						<ul>
+							<li>Reproductive Potential (M/F)</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<br>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Origin of Modern Europeans</h2>
+	<div>
+		<ul>
+			<li>Agriculture
+				<ul>
+					<li>MigrationL demic diffusion
+						<ul>
+							<li>people moving into new areas: <b>gene flow</b> (not just ideas)</li>
 						</ul>
 					</li>
 				</ul>
